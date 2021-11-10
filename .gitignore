@@ -37,3 +37,7 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# AT Misc:
+/andrew_only_secrets/
+/data/*.csv
