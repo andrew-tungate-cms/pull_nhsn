@@ -9,7 +9,7 @@ fips = unique(tidycensus::fips_codes$state_code)
 fips = split(fips, rep(1:6, each = 10))
 fips = sapply(fips, function(x) paste0("state_fips_code = '", x, "'", collapse = " OR "))
 
-# todo add fips state code filtering. start iwth one, go from there. 
+
 query = paste0("
 SELECT 
   case_month
@@ -40,6 +40,14 @@ for(i in seq_along(queries)) {
 
 out = bind_rows(query_result)
 
-out %>%
-  filter(county_fips_code == 37183) %>%
-  arrange(county_fips_code, case_month)
+
+
+
+
+
+
+
+
+
+
+
